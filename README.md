@@ -1,17 +1,34 @@
-### KeywordGachaServer
+### KeywordGacha Server
 - 与 [KeywordGacha](https://github.com/neavo/KeywordGacha) 配套的本地大模型一键包
 
-### 使用
+### 作为 KeywordGacha 服务器使用
 - 请确保你使用的是至少 8G 显存的 Nvidia 显卡，并且安装了最新版本的驱动程序
 - 从 [Release下载页](https://github.com/neavo/KeywordGachaServer/releases) 下载最新的一键包，解压缩到本地；
-- 从 Qwen2 官方的下载页下载 Qwen2-7B 模型文件，然后解压缩到上面的文件夹里 --> [国内地址](https://modelscope.cn/models/qwen/Qwen2-7B-Instruct-GGUF/file/view/master?fileName=qwen2-7b-instruct-q4_k_m.gguf&status=2)  --> [海外地址](https://huggingface.co/Qwen/Qwen2-7B-Instruct-GGUF/blob/main/qwen2-7b-instruct-q4_k_m.gguf)
-- 现在你的文件结构应该是：
-```
-KeywordGachaServer\llama\...
-                  \common.bat
-                  \00_RUN_NP2_3K.bat
-                  \qwen2-7b-instruct-q4_k_m.gguf
-```
-- 双击 00_RUN_NP2_3K.bat，会开启一个黑色的终端窗口。
-- 一阵文字滚动后，看到会有类似 `all slots are idle | tid="6188" timestamp=1719838812` 的字样就说明成功启动了。
-- 你可以开始使用 [KeywordGacha](https://github.com/neavo/KeywordGacha) 了。
+- 从 Qwen2 官方的下载页下载 Qwen2-7B 模型文件，放到到上面的文件夹里 --> [国内地址](https://modelscope.cn/models/qwen/Qwen2-7B-Instruct-GGUF/file/view/master?fileName=qwen2-7b-instruct-q4_k_m.gguf&status=2)    --> [海外地址](https://huggingface.co/Qwen/Qwen2-7B-Instruct-GGUF/blob/main/qwen2-7b-instruct-q4_k_m.gguf)
+- 现在你的文件结构应该类似于：
+  
+  ```
+  KeywordGachaServer\llama\...
+                    \common.bat
+                    \00_RUN_NP2_3K.bat
+                    \qwen2-7b-instruct-q4_k_m.gguf
+                    \...
+  ```
+
+- 双击 00_RUN_NP2_3K.bat，会开启一个黑色的终端窗口
+- 一阵文字滚动后，看到有类似 `all slots are idle | tid="xxx" timestamp=xxx` 的字样就说明成功启动了
+- 关闭终端窗口即为关闭服务器
+
+### 作为 SakuraLLM 服务器使用
+- 本一键包也可以作为 [SakuraLLM](https://github.com/SakuraLLM/SakuraLLM) 轻小说翻译模型的服务器来使用
+- 根据你的显存大小下载对应的 SakuraLLM 模型并放入上面的文件夹：
+- 显存 < 11G --> [GalTransl-7B-v1.5](https://huggingface.co/SakuraLLM/GalTransl-7B-v1.5/blob/main/GalTransl-7B-v1.5-IQ4_XS.gguf)
+- 显存 >= 11G --> [Sakura-14B-Qwen2beta-v0.9.2-GGUF](https://huggingface.co/SakuraLLM/Sakura-14B-Qwen2beta-v0.9.2-GGUF/blob/main/sakura-14b-qwen2beta-v0.9.2-iq4xs.gguf)
+- 使用方法类似于前文，在此不再赘述
+
+> [!CAUTION]
+> 
+> 每个人的系统环境不同，显存占用有波动是正常现象
+> 
+> 如遇显存不足，建议在使用过程中关闭浏览器的硬件加速及其他占用显存的软件
+
