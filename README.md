@@ -24,11 +24,13 @@
 - 根据你的显存大小下载对应的 SakuraLLM 模型并放入上面的文件夹：
 - 显存 < 11G --> [GalTransl-7B-v1.5](https://huggingface.co/SakuraLLM/GalTransl-7B-v1.5/blob/main/GalTransl-7B-v1.5-IQ4_XS.gguf)
 - 显存 >= 11G --> [Sakura-14B-Qwen2beta-v0.9.2-GGUF](https://huggingface.co/SakuraLLM/Sakura-14B-Qwen2beta-v0.9.2-GGUF/blob/main/sakura-14b-qwen2beta-v0.9.2-iq4xs.gguf)
-- 使用方法类似于前文，在此不再赘述
+- 双击显存对应的脚本，选择对应的模型使用即可
+- 与 [AiNiee](https://github.com/NEKOparapa/AiNiee) 翻译器搭配使用的话，可以参考这里的教程 [SakuraLLM 性能优化指南](https://github.com/NEKOparapa/AiNiee/blob/main/SakuraLLMScript/OptimizationGuide.md)
+
+　　
 
 > [!CAUTION]
 > 
 > 每个人的系统环境不同，显存占用有波动是正常现象
 > 
 > 如遇显存不足，建议在使用过程中关闭浏览器的硬件加速及其他占用显存的软件
-
