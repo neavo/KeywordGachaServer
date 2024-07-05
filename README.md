@@ -5,7 +5,8 @@
 ## 作为 KeywordGacha 服务器使用
 - 请确保你使用的是至少 8G 显存的 Nvidia 显卡，并且安装了最新版本的驱动程序
 - 从 [Release下载页](https://github.com/neavo/KeywordGachaServer/releases) 下载最新的一键包，解压缩到本地；
-- 从 Qwen2 官方的下载页下载 Qwen2-7B 模型文件，放到到上面的文件夹里 --> [国内地址](https://modelscope.cn/models/qwen/Qwen2-7B-Instruct-GGUF/file/view/master?fileName=qwen2-7b-instruct-q4_k_m.gguf&status=2)    --> [海外地址](https://huggingface.co/Qwen/Qwen2-7B-Instruct-GGUF/blob/main/qwen2-7b-instruct-q4_k_m.gguf)
+- 从 Qwen2 的官方下载页下载 Qwen2-7B 模型文件，放到到上面的文件夹里
+- --> [Qwen2 国内下载地址](https://modelscope.cn/models/qwen/Qwen2-7B-Instruct-GGUF/file/view/master?fileName=qwen2-7b-instruct-q4_k_m.gguf&status=2)    --> [Qwen2 海外地址](https://huggingface.co/Qwen/Qwen2-7B-Instruct-GGUF/blob/main/qwen2-7b-instruct-q4_k_m.gguf)
 - 现在你的文件结构应该类似于：
   
   ```
