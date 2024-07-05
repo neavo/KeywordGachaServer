@@ -29,8 +29,8 @@
 - 显存小于 11G --> [GalTransl-7B-v1.5](https://huggingface.co/SakuraLLM/GalTransl-7B-v1.5/blob/main/GalTransl-7B-v1.5-IQ4_XS.gguf)
 - 显存大于等于 11G --> [Sakura-14B-Qwen2beta-v0.9.2-GGUF](https://huggingface.co/SakuraLLM/Sakura-14B-Qwen2beta-v0.9.2-GGUF/blob/main/sakura-14b-qwen2beta-v0.9.2-iq4xs.gguf)
 - 双击 `显存大小对应的启动脚本`，选择对应的模型使用即可
-- 一键包内启动脚本
-- 与 [AiNiee](https://github.com/NEKOparapa/AiNiee) 翻译器搭配使用的话，可以参考这里的教程 [SakuraLLM 性能优化指南](https://github.com/NEKOparapa/AiNiee/blob/main/SakuraLLMScript/OptimizationGuide.md)
+- 一键包内启动脚本应参考这个教程 [SakuraLLM 性能优化指南](https://github.com/NEKOparapa/AiNiee/blob/main/SakuraLLMScript/OptimizationGuide.md) 与 [AiNiee](https://github.com/NEKOparapa/AiNiee) 翻译器搭配使用
+- 不保证与其他应用翻译应用的兼容性
 
 　　　　
 > [!CAUTION]
