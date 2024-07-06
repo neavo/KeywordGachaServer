@@ -1,13 +1,17 @@
 ## KeywordGacha Server
-- 与 [KeywordGacha](https://github.com/neavo/KeywordGacha) 配套的本地大模型一键包
-- 也可以作为 [SakuraLLM](https://github.com/SakuraLLM/SakuraLLM) 轻小说翻译模型的服务器来使用
+- 与 [KeywordGacha](https://github.com/neavo/KeywordGacha) 配套的本地大模型服务器端一键包
+- 也可以作为 [SakuraLLM](https://github.com/SakuraLLM/SakuraLLM) 轻小说翻译模型的服务器端来使用
+
+## 注意
+- `翻译` 与 `提取关键词` 使用不同的模型和启动配置，请认真观看说明，不要混用
+- [SakuraLLM](https://github.com/SakuraLLM/SakuraLLM) 只有翻译功能，不能用于提取关键字
 
 ## 作为 KeywordGacha 服务器使用
 - 请确保你使用的是至少 8G 显存的 Nvidia 显卡，并且安装了最新版本的驱动程序
 - 从 [Release下载页](https://github.com/neavo/KeywordGachaServer/releases) 下载最新的一键包，解压缩到本地；
 - 从 Qwen2 的官方下载页下载 Qwen2-7B-Instruct 模型文件，放到到上面的文件夹里
-- --> [qwen2-7b-instruct-q4_k_m 国内下载地址](https://modelscope.cn/models/qwen/Qwen2-7B-Instruct-GGUF/file/view/master?fileName=qwen2-7b-instruct-q4_k_m.gguf&status=2)
-- --> [qwen2-7b-instruct-q4_k_m 海外下载地址](https://huggingface.co/Qwen/Qwen2-7B-Instruct-GGUF/blob/main/qwen2-7b-instruct-q4_k_m.gguf)
+- --> [Qwen2-7B-Instruct 国内下载地址](https://modelscope.cn/models/qwen/Qwen2-7B-Instruct-GGUF/file/view/master?fileName=qwen2-7b-instruct-q4_k_m.gguf&status=2)
+- --> [Qwen2-7B-Instruct 海外下载地址](https://huggingface.co/Qwen/Qwen2-7B-Instruct-GGUF/blob/main/qwen2-7b-instruct-q4_k_m.gguf)
 - 现在你的文件结构应该类似于：
   
   ```
@@ -32,9 +36,7 @@
 - 一键包内启动脚本应参考这个教程 [SakuraLLM 性能优化指南](https://github.com/NEKOparapa/AiNiee/blob/main/SakuraLLMScript/OptimizationGuide.md) 与 [AiNiee](https://github.com/NEKOparapa/AiNiee) 翻译器搭配使用
 - 不保证与其他应用翻译应用的兼容性
 
-　　　　
-> [!CAUTION]
-> 
-> 每个人的系统环境不同，显存占用有波动是正常现象
-> 
-> 如遇显存不足，建议在使用过程中关闭浏览器、VSCode 及/或 占用显存的软件
+## 其他提醒　
+- 每个人的系统环境不同，显存占用有波动是正常现象
+- 如遇显存不足，建议在使用过程中关闭浏览器、VSCode 及/或 占用显存的软件
+- 或者使用更低一个档次的启动脚本
