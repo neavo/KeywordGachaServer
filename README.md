@@ -4,21 +4,21 @@
 
 ## 注意
 - `翻译` 与 `提取关键词` 使用不同的模型和启动配置，请认真观看说明，不要混用
-- [SakuraLLM](https://github.com/SakuraLLM/SakuraLLM) 只有翻译功能，不能用于提取关键字
+- `提取关键词` 应使用 [GLM4-9B-Chat-GGUF](https://huggingface.co/second-state/glm-4-9b-chat-GGUF) 模型使用
+- `翻译` 应使用 [SakuraLLM](https://github.com/SakuraLLM/SakuraLLM) 模型使用
+- 请仔细阅读本页的各项步骤，不要搞错
 
 ## 作为 KeywordGacha 服务器使用
 - 请确保你使用的是至少 8G 显存的 Nvidia 显卡，并且安装了最新版本的驱动程序
 - 从 [Release下载页](https://github.com/neavo/KeywordGachaServer/releases) 下载最新的一键包，解压缩到本地；
-- 从 Qwen2 的官方下载页下载 Qwen2-7B-Instruct 模型文件，放到到上面的文件夹里
-- --> [Qwen2-7B-Instruct 国内下载地址](https://modelscope.cn/models/qwen/Qwen2-7B-Instruct-GGUF/file/view/master?fileName=qwen2-7b-instruct-q4_k_m.gguf&status=2)
-- --> [Qwen2-7B-Instruct 海外下载地址](https://huggingface.co/Qwen/Qwen2-7B-Instruct-GGUF/blob/main/qwen2-7b-instruct-q4_k_m.gguf)
+- 下载模型 --> [GLM4-9B-Chat-GGUF](https://huggingface.co/second-state/glm-4-9b-chat-GGUF) ，放到到上面的文件夹里
 - 现在你的文件结构应该类似于：
   
   ```
   KeywordGachaServer\llama\...
                     \common.bat
                     \00_RUN_NP2_3K.bat
-                    \qwen2-7b-instruct-q4_k_m.gguf
+                    \glm-4-9b-chat-Q4_K_S.gguf
                     \...
   ```
 
