@@ -3,10 +3,10 @@
 - 也可以作为 [SakuraLLM](https://github.com/SakuraLLM/SakuraLLM) 轻小说翻译模型的服务器端来使用
 
 ## 注意
-- `翻译` 与 `提取关键词` 使用不同的模型和启动配置，请认真观看说明，不要混用
-- `提取关键词` 应使用 [GLM4-9B-Chat-GGUF](https://huggingface.co/second-state/glm-4-9b-chat-GGUF) 模型使用
-- `翻译` 应使用 [SakuraLLM](https://github.com/SakuraLLM/SakuraLLM) 模型使用
-- 请仔细阅读本页的各项步骤，不要搞错
+- `翻译` 与 `提取关键词` 使用不同的模型和启动配置，不能混用
+- `提取关键词` 应使用 [GLM4-9B-Chat-GGUF](https://huggingface.co/second-state/glm-4-9b-chat-GGUF) 模型
+- `翻译` 应使用 [SakuraLLM](https://github.com/SakuraLLM/SakuraLLM) 模型
+- 请仔细阅读本页的各项步骤
 
 ## 作为 KeywordGacha 服务器使用
 - 请确保你使用的是至少 8G 显存的 Nvidia 显卡，并且安装了最新版本的驱动程序
@@ -38,5 +38,5 @@
 
 ## 其他提醒　
 - 每个人的系统环境不同，显存占用有波动是正常现象
-- 如遇显存不足，建议在使用过程中关闭浏览器、VSCode 及/或 占用显存的软件
+- 如遇显存不足，建议在使用过程中关闭 `浏览器`、`VSCode` 及/或 `其他占用显存` 的软件
 - 或者使用更低一个档次的启动脚本
