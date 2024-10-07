@@ -4,14 +4,14 @@
 ## 步骤
 - 请确保你使用的是至少 8G 显存的 Nvidia 显卡，并且安装了最新版本的驱动程序
 - 从 [Release下载页](https://github.com/neavo/KeywordGachaServer/releases) 下载最新的一键包，解压缩到本地；
-- 下载模型 --> [GLM4-9B-Chat-GGUF](https://huggingface.co/second-state/glm-4-9b-chat-GGUF/blob/main/glm-4-9b-chat-Q4_K_S.gguf)，放到到上面的文件夹里
+- 下载模型 --> [glm-4-9b-chat-IQ4_XS.gguf](https://huggingface.co/bartowski/glm-4-9b-chat-GGUF/blob/main/glm-4-9b-chat-IQ4_XS.gguf)，放到到上面的文件夹里
 - 现在你的文件结构应该类似于：
   
   ```
   KeywordGachaServer\llama\...
                     \common.bat
                     \00_RUN_NP2_3K.bat
-                    \glm-4-9b-chat-Q4_K_S.gguf
+                    \glm-4-9b-chat-IQ4_XS.gguf
                     \...
   ```
 
