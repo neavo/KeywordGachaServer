@@ -4,18 +4,18 @@
 ## 步骤
 - 请确保你使用的是至少 8G 显存的 Nvidia 显卡，并且安装了最新版本的驱动程序
 - 从 [发布页](https://github.com/neavo/KeywordGachaServer/releases) 下载最新的 `KeywordGachaServer` 并解压缩
-- 下载模型 --> [glm-4-9b-chat-IQ4_XS.gguf](https://huggingface.co/bartowski/glm-4-9b-chat-GGUF/blob/main/glm-4-9b-chat-IQ4_XS.gguf) 并放入 `KeywordGachaServer` 文件夹
+- 下载模型 --> [Qwen2.5-7B-Instruct-GGUF](https://huggingface.co/bartowski/Qwen2.5-7B-Instruct-GGUF/blob/main/Qwen2.5-7B-Instruct-IQ4_XS.gguf) 并放入 `KeywordGachaServer` 文件夹
 - 现在你的文件结构应该类似于：
   
   ```
   KeywordGachaServer\llama\...
                     \00_Core.bat
-                    \01_2K_NP8.bat
-                    \glm-4-9b-chat-IQ4_XS.gguf
+                    \01_2K_NP16.bat
+                    \Qwen2.5-7B-Instruct-IQ4_XS.gguf
                     \...
   ```
 
-- 双击 01_2K_NP8.bat，会开启一个黑色的终端窗口
+- 双击 `01_2K_NP16.bat`，会开启一个黑色的终端窗口
 - 一阵文字滚动后，看到有类似 `all slots are idle` 的字样就说明成功启动了
 - 关闭黑色的终端窗口即为关闭服务器
 
