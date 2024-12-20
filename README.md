@@ -1,17 +1,18 @@
 ## KeywordGacha Server
 - 与 [KeywordGacha](https://github.com/neavo/KeywordGacha) 配套的本地模型一键包
+- 请确保安装了最新版本的显卡驱动程序
+- 理论上支持所有 4G 以上显存的显卡（包括集成显卡）
 
 ## 步骤
-- 请确保你使用的是至少 8G 显存的 Nvidia 显卡，并且安装了最新版本的驱动程序
-- 从 [发布页](https://github.com/neavo/KeywordGachaServer/releases) 下载最新的 `KeywordGachaServer` 并解压缩
-- 下载模型 --> [Qwen2.5-7B-Instruct-GGUF](https://huggingface.co/bartowski/Qwen2.5-7B-Instruct-GGUF/blob/main/Qwen2.5-7B-Instruct-IQ4_XS.gguf) 并放入 `KeywordGachaServer` 文件夹
+- 从 [发布页](https://github.com/neavo/KeywordGachaServer/releases) 下载最新版本的一键包并解压缩
+- 下载模型 --> [keyword_gacha_llm_1.5b_20241220_q6_km.gguf](https://huggingface.co/neavo/keyword_gacha_llm_1.5b_multilingual/blob/main/keyword_gacha_llm_1.5b_20241220_q6_km.gguf) 并放入一键包文件夹
 - 现在你的文件结构应该类似于：
   
   ```
   KeywordGachaServer\llama\...
                     \00_Core.bat
                     \01_2K_NP16.bat
-                    \Qwen2.5-7B-Instruct-IQ4_XS.gguf
+                    \keyword_gacha_llm_1.5b_20241220_q6_km.gguf
                     \...
   ```
 
